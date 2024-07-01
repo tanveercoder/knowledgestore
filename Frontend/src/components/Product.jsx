@@ -9,7 +9,7 @@ function Product() {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`http://localhost:4001/book/${id}`);
+        const response = await axios.get(`https://knowledgestore-api.vercel.app/book/${id}`);
         setBook(response.data);
       } catch (error) {
         console.error("Error fetching book:", error);
